@@ -1,0 +1,157 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="reveal.css" type="text/css" />
+        <link rel="stylesheet" href="black.css" type="text/css" />
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+                <section>
+                    <h1>Project Presentation</h1>
+                    <h3>Tamara Chu</h3>
+                    <p>
+                        Creative Code Immersize Winter 2017
+                    </p>
+                </section>
+
+                <section>
+                    <section>
+                        <h2>Concept</h2>
+                        <p>
+                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/15439/tic-tac-toe.png" />
+                        </p>
+                        <p>
+                            You take Tic-Tac-Toe...
+                        </p>
+                    </section>
+                    <section>
+                        <h2>Add guns</h2>
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/15439/ak47.png" />
+                    </section>
+                    <section>
+                        <h2>And jousting</h2>
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/15439/jousting.jpeg" />
+                    </section>
+                    <section>
+                        <h2>You end up with this</h2>
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/15439/ultimate-tic-tac-toe.png" />
+                    </section>
+                    <section data-background="http://i.giphy.com/90F8aUepslB84.gif">
+                    </section>
+                </section>
+
+                <!-- Example of nested vertical slides -->
+                <section>
+                    <section>
+                        <h2>Okay, slow down. That looks confusing!</h2>
+                        <p>Calm down, it's sort of simple</p>
+                    </section>
+                    <section>
+                        <h2>It's simple Tic-Tac-Toe</h2>
+                        <p>
+                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/15439/tic-tac-toe.png" />
+                        </p>
+                    </section>
+                    <section>
+                        <h2>But your move dictates where your opponent movies.</h2>
+                        <p>
+                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/15439/tic-tac-toe-move.png" />
+                        </p>
+                    </section>
+                    <section>
+                        <h2>So there's a slight strategy to it.</h2>
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h2>How I made it.</h2>
+                        <p>
+                            First I made a super simple Tic-Tac-Toe game
+                        </p>
+                        <p>
+                            <p data-height="400" data-theme-id="0" data-slug-hash="domBpg" data-default-tab="result" data-user="fabean" class='codepen'>See the Pen <a href='http://codepen.io/fabean/pen/domBpg/'>Multiplayer Tic Tac Toe Web RTC</a> by Josh Fabean (<a href='http://codepen.io/fabean'>@fabean</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+                            <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+                        </p>
+                    </section>
+                    <section>
+                        <h2>I took the game and set it to Wumbo mode</h2>
+                        <p>Which pretty much means I made it scale</p>
+                    </section>
+                    <section>
+                        <h2>Some boring code, what move is next?</h2>
+                        <p>
+                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/15439/calc-next-move.png" />
+                        </p>
+                    </section>
+                    <section>
+                        <h2>Find out if someone won</h2>
+                        <p>
+                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/15439/winner.png" />
+                        </p>
+                    </section>
+                    <section data-background="https://media3.giphy.com/media/wReSYWCXsE21q/200.gif">
+                        <h2>That's a big if</h2>
+                        <p>
+                        </p>
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h2>Now for the fun!</h2>
+                        <img src="https://media.giphy.com/media/8w7efnu1zAaoo/giphy.gif" />
+                    </section>
+                    <section>
+                        <h2>Web Fricking RTC!</h2>
+                        <p>
+                            Cool, but what is it?
+                        </p>
+                    </section>
+                    <section>
+                        <h2>So easy!</h2>
+                        <p>
+                            I'm using Peer.js, which helps a lot
+                        </p>
+                        <p>
+                            It appears like it's dead though...
+                        </p>
+                        <p>
+                            <img src="https://media.giphy.com/media/dOPBU0xokGChq/giphy.gif" />
+                        </p>
+                    </section>
+                    <section>
+                        <p>
+                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/15439/local-peerjs.png" />
+                        </p>
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h2>Match Making</h2>
+                        <p>
+                            <img src="https://media.giphy.com/media/IPiNQ3YEoNOMw/giphy.gif" />
+                        </p>
+                    </section>
+                    <section>
+                        <p>
+                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/15439/remote-peerjs.png" />
+                        </p>
+                    </section>
+                </section>
+
+                <section>
+                    <h2>That's all!</h2>
+                    <p>
+                        Let play!
+                    </p>
+                </section>
+
+            </div>
+        </div>
+
+        <script language="javascript" src="reveal.js"></script>
+        <script language="javascript" src="presentation.js"></script>
+    </body>
+</html>
