@@ -35,14 +35,22 @@ var recalculateImageHeight = function(image) {
 var appendSnapshot = function(filename) {
     var image = document.createElement('img');
     var imageContainer = document.createElement('div');
-    // var imageCaption = document.createElement('p');
+    var imageCaption = document.createElement('p');
+    var imageName = filename.split('__');
 
     imageContainer.className = 'img_container';
-    // imageCaption.className = 'img_caption';
-    // imageCaption.innerHTML = filename;
+
     image.src = 'images/' + filename;
     image.style.width = currentWidth + 'px';
+
     imageContainer.appendChild(image);
+
+    if (imageName[1]) {
+        imageName = imageName[1].replace('.png', '');
+        imageCaption.className = 'img_caption';
+        imageCaption.innerHTML = imageName;
+        imageContainer.appendChild(imageCaption);
+    }
 
     if (container.firstChild) {
         container.insertBefore(imageContainer, container.firstChild);
