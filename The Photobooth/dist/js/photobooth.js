@@ -42,10 +42,13 @@ var appendSnapshot = function(filename) {
     // imageCaption.innerHTML = filename;
     image.src = 'images/' + filename;
     image.style.width = currentWidth + 'px';
-
     imageContainer.appendChild(image);
-    // imageContainer.appendChild(imageCaption);
-    container.appendChild(imageContainer);
+
+    if (container.firstChild) {
+        container.insertBefore(imageContainer, container.firstChild);
+    } else {
+        container.appendChild(imageContainer);
+    }
 };
 
 window.setInterval(function() {
